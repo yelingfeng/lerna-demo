@@ -1,0 +1,19 @@
+{
+  "name": "lerna-demo",
+  "private": true,
+  "scripts": {
+    "test": "lerna run test",
+    "new-version": "lerna version --conventional-commits --yes",
+    "diff": "lerna diff"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "lerna": "^3.18.4"
+  },
+  "repository": "https://github.com/yelingfeng/lerna-demo.git",
+  "author": "yelingfeng <yelingfeng521@gmail.com>",
+  "license": "MIT"
+}
