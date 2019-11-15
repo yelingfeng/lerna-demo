@@ -1,19 +1,16 @@
 {
-  "name": "@demo/common",
+  "name": "@chanct/common",
   "version": "0.0.0-alpha.2",
-  "scripts": {
-    "test": "echo  this is common package"
-  },
   "author": "yelingfeng <yelingfeng521@gmail.com>",
   "homepage": "https://github.com/yelingfeng/lerna-demo#readme",
   "license": "MIT",
-  "main": "lib/common.js",
+  "main": "src/index.js",
   "directories": {
-    "lib": "lib",
+    "src": "src",
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "src"
   ],
   "repository": {
     "type": "git",

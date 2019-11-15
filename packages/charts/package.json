@@ -1,5 +1,5 @@
 {
-  "name": "@demo/charts",
+  "name": "@chanct/charts",
   "version": "0.0.0-alpha.2",
   "scripts": {
     "test": "echo this.is charts package "
@@ -7,13 +7,13 @@
   "author": "yelingfeng <yelingfeng521@gmail.com>",
   "homepage": "https://github.com/yelingfeng/lerna-demo#readme",
   "license": "MIT",
-  "main": "lib/charts.js",
+  "main": "src/index.js",
   "directories": {
-    "lib": "lib",
+    "src": "src",
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "index.js"
   ],
   "repository": {
     "type": "git",
@@ -21,5 +21,8 @@
   },
   "bugs": {
     "url": "https://github.com/yelingfeng/lerna-demo/issues"
+  },
+  "dependencies": {
+    "@chanct/common":"0.0.0-alpha.2"
   }
 }
