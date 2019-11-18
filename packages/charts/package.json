@@ -1,6 +1,6 @@
 {
   "name": "@chanct/charts",
-  "version": "0.0.0-alpha.2",
+  "version": "0.0.0-alpha.3",
   "scripts": {
     "test": "echo this.is charts package "
   },
@@ -23,6 +23,6 @@
     "url": "https://github.com/yelingfeng/lerna-demo/issues"
   },
   "dependencies": {
-    "@chanct/common":"0.0.0-alpha.2"
+    "@chanct/common": "^0.0.0-alpha.3"
   }
 }
