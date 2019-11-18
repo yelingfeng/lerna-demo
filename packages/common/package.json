@@ -1,22 +1,22 @@
 {
-  "name": "@chanct/common",
-  "version": "0.0.0-alpha.3",
-  "author": "yelingfeng <yelingfeng521@gmail.com>",
-  "homepage": "https://github.com/yelingfeng/lerna-demo#readme",
-  "license": "MIT",
-  "main": "src/index.js",
-  "directories": {
-    "src": "src",
-    "test": "__tests__"
-  },
-  "files": [
-    "src"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/yelingfeng/lerna-demo.git"
-  },
-  "bugs": {
-    "url": "https://github.com/yelingfeng/lerna-demo/issues"
-  }
+    "name": "@chanct/common",
+    "version": "0.0.0-alpha.3",
+    "author": "yelingfeng <yelingfeng521@gmail.com>",
+    "homepage": "https://github.com/yelingfeng/lerna-demo#readme",
+    "license": "MIT",
+    "main": "src/index.js",
+    "directories": {
+        "src": "src",
+        "test": "__tests__"
+    },
+    "files": [
+        "src"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/yelingfeng/lerna-demo.git"
+    },
+    "bugs": {
+        "url": "https://github.com/yelingfeng/lerna-demo/issues"
+    }
 }
