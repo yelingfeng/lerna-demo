@@ -1,45 +1,54 @@
 {
-    "name": "lerna-demo",
-    "private": true,
-    "workspaces": [
-        "packages/*"
-    ],
-    "scripts": {
-        "test": "lerna run test",
-        "new-version": "lerna version --conventional-commits --yes",
-        "diff": "lerna diff",
-        "lint": "prettier --write --parser typescript \"packages/**/*.ts?(x)\""
-    },
-    "gitHooks": {
-        "pre-commit": "lint-staged",
-        "commit-msg": "node scripts/verifyCommit.js"
-    },
-    "lint-staged": {
-        "*.js": [
-            "prettier --write",
-            "git add"
-        ],
-        "*.ts?(x)": [
-            "prettier --parser=typescript --write",
-            "git add"
-        ]
-    },
-    "devDependencies": {
-        "@types/jest": "^24.0.23",
-        "@typescript-eslint/eslint-plugin": "^2.7.0",
-        "@typescript-eslint/parser": "^2.7.0",
-        "chalk": "^3.0.0",
-        "eslint": "^6.6.0",
-        "eslint-config-airbnb-base": "^14.0.0",
-        "eslint-config-prettier": "^6.5.0",
-        "eslint-plugin-import": "^2.18.2",
-        "eslint-plugin-jest": "^23.0.4",
-        "eslint-plugin-prettier": "^3.1.1",
-        "jest": "^24.9.0",
-        "lerna": "^3.18.4",
-        "lint-staged": "^9.4.3",
-        "prettier": "^1.19.1",
-        "ts-jest": "^24.1.0",
-        "typescript": "^3.7.2"
+  "private": true,
+  "name": "lerna-demo",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "lerna run test",
+    "new-version": "lerna version --conventional-commits --yes ",
+    "diff": "lerna diff",
+    "commit": "git-cz"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "*.{js,ts,json,md}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.{js,ts?(x)}": [
+      "prettier --write & eslint ./",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.23",
+    "@typescript-eslint/eslint-plugin": "^2.7.0",
+    "@typescript-eslint/parser": "^2.7.0",
+    "chalk": "^3.0.0",
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog": "^3.0.2",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^23.0.4",
+    "eslint-plugin-prettier": "^3.1.1",
+    "husky": "^3.0.9",
+    "jest": "^24.9.0",
+    "lerna": "^3.18.4",
+    "lint-staged": "^9.4.3",
+    "prettier": "^1.19.1",
+    "ts-jest": "^24.1.0",
+    "typescript": "^3.7.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
 }
