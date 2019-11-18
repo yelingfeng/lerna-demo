@@ -2749,7 +2749,20 @@ eslint-config-airbnb-base@^14.0.0:
     object.assign "^4.1.0"
     object.entries "^1.1.0"
 
-eslint-config-prettier@^6.5.0:
+eslint-config-ajtp@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/eslint-config-ajtp/-/eslint-config-ajtp-0.0.3.tgz#ae592db95af4962f58b39cf4102cdeaa780a3d23"
+  integrity sha512-KVdfXubpgpHKtJhLtdKvyLDY0XZhx6R2Ou1HQQ8W5zFTo23bTDFEP2Vbgx1iE+zY24TdmIMYsqym4xjnFfroZw==
+  dependencies:
+    "@typescript-eslint/eslint-plugin" "^2.7.0"
+    "@typescript-eslint/parser" "^2.7.0"
+    eslint-config-airbnb-base "^14.0.0"
+    eslint-config-prettier "^6.6.0"
+    eslint-plugin-import "^2.18.2"
+    eslint-plugin-jest "^23.0.4"
+    eslint-plugin-prettier "^3.1.1"
+
+eslint-config-prettier@^6.6.0:
   version "6.6.0"
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-6.6.0.tgz#4e039f65af8245e32d8fba4a2f5b83ed7186852e"
   integrity sha512-6RGaj7jD+HeuSVHoIT6A0WkBhVEk0ULg74kp2FAWIwkYrOERae0TjIO09Cw33oN//gJWmt7aFhVJErEVta7uvA==
